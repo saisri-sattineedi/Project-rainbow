@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>RAINBOW</title>
+	<Style>
+		body{
+			text-align: center;
+			margin: 20%;
+		}
+		button{
+			cursor: pointer;
+			background-color: darkviolet;
+		}
+	</Style>
+</head>
+<body>
+	<h1>DAZZLING RAINBOW--!</h1>
+	<button><h3>Click here!</h3></button>
+	<script>
+		const btn=document.querySelector('button');
+		const body=document.querySelector('body');
+		const color=['violet','indigo','blue','green','yellow','orange','red'];
+		document.addEventListener('click',function(){
+			const colorIndex=parseInt(Math.random()*color.length);
+			body.style.backgroundColor=color[colorIndex];
+		});
+	</script>
+</body>
+</html>
+		
